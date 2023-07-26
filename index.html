@@ -57,8 +57,13 @@
         </div>
     </header>
     <banner>
-        <div class="hero min-h-[calc(80vh-66px)] bg-hero-bg mt-10" style="background-image: url(images/banner2.png);">
+        <div class="hero min-h-[calc(80vh-66px)] bg-hero-bg mt-10 relative" style="background-image: url(images/banner2.png);">
             <div class="hero-overlay bg-opacity-60"></div>
+            <button aria-label="Slide back" type="button" class="absolute left-0 z-30 p-2 ml-10 focus:outline-none focus:dark:bg-gray-400 focus:ri focus:ri focus:ri" fdprocessedid="zukl2m">
+              <svg width="8" height="14" fill="none" viewBox="0 0 8 14" xmlns="http://www.w3.org/2000/svg" class="w-4 h-4">
+                  <path d="M7 1L1 7L7 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+          </button>
             <div class="hero-content text-center text-neutral-content">
                 <div class="max-w-lg">
                     <h1 class="mb-6 text-5xl font-bold">Exotic tastes at your doorstep</h1>
@@ -67,14 +72,148 @@
                     </p>
                     <button class="btn bg-red-400 border-0">Shop Now</button>
                   </div>
-            </div>
+                  <button aria-label="Slide forward" id="next" class="absolute right-0 z-30 p-2 mr-10 focus:outline-none focus:dark:bg-gray-400 focus:ri focus:ri focus:ri" fdprocessedid="960zc">
+                    <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-4 h-4">
+                        <path d="M1 1L7 7L1 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </button>
+                </div>
           </div>
-    </banner>
+          <div class="hidden lg:flex bg-white w-3/4 mx-auto absolute bottom-10 left-60 px-40 py-10 gap-20  ">
+            <figure><img src="images/fruit1.png"><figcaption>Strawberry</figcaption></figure>
+            <figure><img src="images/fruit2.png"><figcaption>Strawberry</figcaption></figure>
+            <figure><img src="images/fruit3.png"><figcaption>Strawberry</figcaption></figure>
+            <figure><img src="images/fruit4.png"><figcaption>Strawberry</figcaption></figure>
+            <figure><img src="images/fruit5.png"><figcaption>Strawberry</figcaption></figure>
+          </div>
+        </banner>
+        <main>
+
+        </main>
+        <section class="my-24">
+          <div class=" flex lg:pr-28 items-center gap-56">
+              <div class="text-centerspace-y-5 ">
+                  <h2 class="text-5xl font-extrabold">
+                      Deal of the day
+                  </h2>
+                  <p class="">
+                      Contrary to popular belief, is not simply random text. It has roots in a piece of classical
+                      <br> Latin literature from 45 BC, making it over 2000 years old.
+                  </p>
+                  
+              </div>
+              <div class="hidden lg:flex gap-x-10 ml-96">
+                  <div>
+                      <h1 class="text-5xl font-bold">29 :</h1>
+                      <p>Days</p>
+                  </div>
+                  <div>
+                      <h1 class="text-5xl font-bold">15 :</h1>
+                      <p>Hours</p>
+                  </div>
+                  <div>
+                      <h1 class="text-5xl font-bold">25 :</h1>
+                      <p>Minutes</p>
+                  </div>
+                  <div>
+                      <h1 class="text-5xl font-bold">08</h1>
+                      <p>Second</p>
+                  </div>
+                  
+              </div>
+          </div>
+          <div class="grid gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-10">
+              <!-- first review -->
+              <div class="card bg-base-100 p-9 border border-gray-400">
+                  <figure><img class="w-36" src="images/fruit6.png" alt="Shoes" /></figure>
+                  <div class="card-body">
+                    <div class="text-center "> <h2 class="text-2xl font-bold">
+                      12.90$-18.85$<hr>
+                  </h2>
+                <p>Apple</p></div>
+                      <div class="rating justify-center">
+                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"  />
+                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked/>
+                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        </div>
+                    <div class="text-center space-y-4 mt-4">
+                     
+                      <p><a href="">Details</a></p>
+                    </div>
+                  </div>
+                </div>
+              <!-- second review -->
+              <div class="card bg-base-100 p-9 border border-gray-400">
+                  <figure><img class="w-36" src="images/fruit7.png" alt="Shoes" /></figure>
+                  <div class="card-body">
+                      <div class="text-center "> <h2 class="text-2xl font-bold">
+                        12.90$-18.85$<hr>
+                    </h2>
+                  <p>Apple</p></div>
+                        <div class="rating justify-center">
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"  />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked/>
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                          </div>
+                      <div class="text-center space-y-4 mt-4">
+                       
+                        <p><a href="">Details</a></p>
+                      </div>
+                    </div>
+                </div>
+              <!-- third review -->
+              <div class="card bg-base-100 p-9 border border-gray-400">
+                  <figure><img class="w-36" src="images/fruit8.png" alt="Shoes" /></figure>
+                  <div class="card-body">
+                      <div class="text-center "> <h2 class="text-2xl font-bold">
+                        12.90$-18.85$<hr>
+                    </h2>
+                  <p>Apple</p></div>
+                        <div class="rating justify-center">
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"  />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked/>
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                          </div>
+                      <div class="text-center space-y-4 mt-4">
+                       
+                        <p><a href="">Details</a></p>
+                      </div>
+                    </div>
+                </div>
+                <div class="card bg-base-100 p-9 border border-gray-400">
+                  <figure><img class="w-36" src="images/fruit9.png" alt="Shoes" /></figure>
+                  <div class="card-body">
+                      <div class="text-center "> <h2 class="text-2xl font-bold">
+                        12.90$-18.85$<hr>
+                    </h2>
+                  <p>Apple</p></div>
+                        <div class="rating justify-center">
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"  />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked/>
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                          </div>
+                      <div class="text-center space-y-4 mt-4">
+                       
+                        <p><a href="">Details</a></p>
+                      </div>
+                   
+                  </div>
+                </div>
+          </div><div class="justify-center ml-96 items-center"><button class="bg-red-400 p-3 mt-10 ml-96 ">Shop All</button></div>
+      </section>
   <section class="hero min-h-[calc(80vh-66px)] bg-hero-bg mt-10 flex flex-col" style="background-image: url(images/banner1.png);">
             <div class="hero-overlay bg-opacity-60"></div>
             <div class="hero-content text-center text-neutral-content mb-40">
-                <div class=" ">
-                    <h1 class="mb-6 text-5xl font-bold">Meet the team section</h1>
+                <div class=" mt-10">
+                    <h1 class="mb-10 text-5xl font-bold">Meet the team section</h1>
                     <p class="mb-5">
                         Contrary to popular belief, is not simply random text. It has roots in a piece of classical<br> Latin literature from 45 BC, making it over 2000 years old.
                     </p>
@@ -83,7 +222,7 @@
             
           </div>
            
-    <div class="mt-40">
+    <div class="mt-30">
             <div class="grid grid-cols-1 gap-8 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-4">
                 <div class="flex flex-col items-center p-8">
                     <p class="w-32 h-32 bg-gray-200 rounded-full dark:bg-gray-700 ring-4 ring-gray-300 dark:ring-gray-600"><img src="images/member1.png"></p>
